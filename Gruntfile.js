@@ -1,8 +1,7 @@
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-mocha-cli');
-
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     mochacli: {
       options: {
         timeout: 5000,
@@ -12,7 +11,11 @@ module.exports = function(grunt) {
       },
       all: 'spec/**/*.js'
     }
+
   });
-  grunt.registerTask('default', ['test']);
+
+  grunt.loadNpmTasks('grunt-mocha-cli');
+
   grunt.registerTask('test', ['mochacli']);
+  grunt.registerTask('default', ['test']);
 };
