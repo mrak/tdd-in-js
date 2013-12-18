@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         ui: 'bdd',
         reporter: 'dot'
       },
-      all: 'spec/**/*.coffee'
+      all: 'spec/**/*.js'
     }
   });
   grunt.registerTask('default', ['test']);
