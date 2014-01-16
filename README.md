@@ -25,7 +25,7 @@ If not, you can visit the same downloads page and install it for Mac :)
 
 ### Linux
 
-Use your distributions package manager. If your distribution does not have `node`, or you are not even using a distribution, you would know how to install it anyway :-P
+Use your distribution's package manager. If your distribution does not have `node`, or you are not even using a distribution, you would know how to install it anyway :-P
 
 ```
 $ apt-get install node
@@ -39,6 +39,8 @@ Once you have nodejs installed:
 ```
 $ npm install -g grunt-cli
 ```
+
+You may have to use `sudo`, depending on your system, to install the `grunt` program
 
 ## Setting up the project
 
