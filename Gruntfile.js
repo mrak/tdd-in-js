@@ -10,11 +10,16 @@ module.exports = function(grunt) {
         reporter: 'dot'
       },
       all: 'spec/**/*.js'
+    },
+    watch: {
+      files: ['**/*.js'],
+      tasks: ['mochacli']
     }
 
   });
 
   grunt.loadNpmTasks('grunt-mocha-cli');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('test', ['mochacli']);
   grunt.registerTask('default', ['test']);
