@@ -19,7 +19,7 @@ If you have hacker proclivities, you probably have `brew` on your computer. Then
 $ brew install node
 ```
 
-If not, you can visit the same downloads page and install it for 64bit Mac :)
+If not, you can visit the same downloads page and install it for Mac :)
 
 [Download page](http://nodejs.org/download/)
 
