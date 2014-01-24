@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         ui: 'bdd',
         reporter: 'dot'
       },
-      all: 'spec/**/*.js'
+      all: 'test/**/*.js'
     },
     watch: {
       files: ['**/*.js'],
