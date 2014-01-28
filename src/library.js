@@ -3,6 +3,15 @@ Library = function(name){
   this.addBook = function(book){
     this.books.push(book);
   };
+  this.findBookByTitle = function(title) {
+    for(var i in this.book){
+      var book = this.books[i];
+
+      if(book.title === title){
+        return books;
+      }
+    }
+  };
 
   return this;
 };
