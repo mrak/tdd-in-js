@@ -12,7 +12,16 @@ describe("Library", function(){
     library.addBook(book);
 
     // Assert
-    assert.equal(library.books[0], book,
-      "Library has the book");
+    assert.equal(library.books[0], book, "Library has the book");
+  });
+
+  it("can find a book by title", function(){
+    var library = new Library();
+    var book = new Book('Agile Manifesto', 'Martin Fowler');
+    library.addBook(book);
+
+    var found = library.findBookByTitle("Agile Manifesto");
+
+    assert.equal(found, book, "Books don't match!");
   });
 });
