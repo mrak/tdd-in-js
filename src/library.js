@@ -4,11 +4,11 @@ Library = function(name){
     this.books.push(book);
   };
   this.findBookByTitle = function(title) {
-    for(var i in this.book){
+    for(var i in this.books){
       var book = this.books[i];
 
       if(book.title === title){
-        return books;
+        return book;
       }
     }
   };
