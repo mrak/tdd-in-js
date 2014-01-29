@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         timeout: 5000,
         ignoreLeaks: false,
         ui: 'bdd',
-        reporter: 'dot'
+        reporter: 'spec'
       },
       all: 'test/**/*.js'
     },
